@@ -7,7 +7,7 @@ using FrameworkChallengeScreens.Control;
 namespace FrameworkChallengeScreens.Model {
     class GetMethodConnectionRequest {
         public List<Albums> GetAllAlbums() {
-            HttpWebRequest WebReq = (HttpWebRequest)WebRequest.Create(string.Format("https://jsonplaceholder.typicode.com/albums"));
+            HttpWebRequest WebReq = (HttpWebRequest)WebRequest.Create(string.Format("https://my-json-server.typicode.com/lDede/demo/albums"));
 
             string values = StartGet(WebReq);
             List<Albums> items = JsonConvert.DeserializeObject<List<Albums>>(values);
