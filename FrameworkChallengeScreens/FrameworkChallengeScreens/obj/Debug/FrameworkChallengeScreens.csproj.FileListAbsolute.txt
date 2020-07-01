@@ -1,0 +1,16 @@
+C:\Users\André\Desktop\FrameworkChallengeScreens\FrameworkChallengeScreens\bin\Debug\FrameworkChallengeScreens.exe.config
+C:\Users\André\Desktop\FrameworkChallengeScreens\FrameworkChallengeScreens\bin\Debug\FrameworkChallengeScreens.exe
+C:\Users\André\Desktop\FrameworkChallengeScreens\FrameworkChallengeScreens\bin\Debug\FrameworkChallengeScreens.pdb
+C:\Users\André\Desktop\FrameworkChallengeScreens\FrameworkChallengeScreens\obj\Debug\FrameworkChallengeScreens.csprojAssemblyReference.cache
+C:\Users\André\Desktop\FrameworkChallengeScreens\FrameworkChallengeScreens\obj\Debug\FrameworkChallengeScreens.Properties.Resources.resources
+C:\Users\André\Desktop\FrameworkChallengeScreens\FrameworkChallengeScreens\obj\Debug\FrameworkChallengeScreens.csproj.GenerateResource.cache
+C:\Users\André\Desktop\FrameworkChallengeScreens\FrameworkChallengeScreens\obj\Debug\FrameworkChallengeScreens.csproj.CoreCompileInputs.cache
+C:\Users\André\Desktop\FrameworkChallengeScreens\FrameworkChallengeScreens\obj\Debug\FrameworkChallengeScreens.exe
+C:\Users\André\Desktop\FrameworkChallengeScreens\FrameworkChallengeScreens\obj\Debug\FrameworkChallengeScreens.pdb
+C:\Users\André\Desktop\FrameworkChallengeScreens\FrameworkChallengeScreens\obj\Debug\FrameworkChallengeScreens.FormAlbums.resources
+C:\Users\André\Desktop\FrameworkChallengeScreens\FrameworkChallengeScreens\bin\Debug\Newtonsoft.Json.dll
+C:\Users\André\Desktop\FrameworkChallengeScreens\FrameworkChallengeScreens\bin\Debug\Newtonsoft.Json.xml
+C:\Users\André\Desktop\FrameworkChallengeScreens\FrameworkChallengeScreens\obj\Debug\FrameworkChallengeScreens.csproj.CopyComplete
+C:\Users\André\Desktop\FrameworkChallengeScreens\FrameworkChallengeScreens\obj\Debug\FrameworkChallengeScreens.FormMainMenu.resources
+C:\Users\André\Desktop\FrameworkChallengeScreens\FrameworkChallengeScreens\obj\Debug\FrameworkChallengeScreens.FormPosts.resources
+C:\Users\André\Desktop\FrameworkChallengeScreens\FrameworkChallengeScreens\obj\Debug\FrameworkChallengeScreens.FormToDos.resources
