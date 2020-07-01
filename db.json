@@ -9,6 +9,37 @@
     { "id": 2, "body": "some comment", "postId": 1 }
   ],
   "profile": {
-    "name": "typicode"
-  }
+    "name": "lDede"
+  },
+  "albums": [
+    { "userid": 1, "id": 1, "title": "Alpha" },
+    { "userid": 1, "id": 2, "title": "Beta" },
+    { "userid": 2, "id": 3, "title": "Charlie" },
+    { "userid": 2, "id": 4, "title": "Delta" },
+    { "userid": 2, "id": 5, "title": "Echo" },
+    { "userid": 3, "id": 6, "title": "Foxtrot" },
+    { "userid": 3, "id": 7, "title": "Golf" },
+    { "userid": 3, "id": 8, "title": "Hotel" },
+    { "userid": 3, "id": 9, "title": "India" }
+  ],
+  "photos": [
+    { "albumid": 1, "id": 1, "title": "A", "url": "", "thumbnailurl": ""},
+    { "albumid": 1, "id": 2, "title": "B", "url": "", "thumbnailurl": ""},
+    { "albumid": 1, "id": 3, "title": "C", "url": "", "thumbnailurl": ""},
+    { "albumid": 1, "id": 4, "title": "D", "url": "", "thumbnailurl": ""},
+    { "albumid": 1, "id": 5, "title": "E", "url": "", "thumbnailurl": ""},
+    { "albumid": 1, "id": 6, "title": "F", "url": "", "thumbnailurl": ""},
+    { "albumid": 2, "id": 7, "title": "G", "url": "", "thumbnailurl": ""},
+    { "albumid": 2, "id": 8, "title": "H", "url": "", "thumbnailurl": ""},
+    { "albumid": 2, "id": 9, "title": "I", "url": "", "thumbnailurl": ""},
+    { "albumid": 2, "id": 10, "title": "J", "url": "", "thumbnailurl": ""},
+    { "albumid": 2, "id": 11, "title": "K", "url": "", "thumbnailurl": ""},
+    { "albumid": 2, "id": 12, "title": "L", "url": "", "thumbnailurl": ""},
+    { "albumid": 3, "id": 13, "title": "M", "url": "", "thumbnailurl": ""},
+    { "albumid": 3, "id": 14, "title": "N", "url": "", "thumbnailurl": ""},
+    { "albumid": 3, "id": 15, "title": "O", "url": "", "thumbnailurl": ""},
+    { "albumid": 3, "id": 16, "title": "P", "url": "", "thumbnailurl": ""},
+    { "albumid": 3, "id": 17, "title": "Q", "url": "", "thumbnailurl": ""},
+    { "albumid": 3, "id": 18, "title": "R", "url": "", "thumbnailurl": ""}
+  ]
 }
