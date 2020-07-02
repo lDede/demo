@@ -1,12 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Text;
 using System.Windows.Forms;
 
-namespace FrameworkChallengeScreens {
+namespace FrameworkChallengeScreens.View
+{
     public partial class FormMainMenu : Form {
         public FormMainMenu() {
             InitializeComponent();
@@ -28,6 +24,22 @@ namespace FrameworkChallengeScreens {
         {
             FormPosts form = new FormPosts();
             form.ShowDialog();
+        }
+
+        private void btnDevInfo_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Application made for use GETS from an .json file type from the API 'https://jsonplaceholder.typicode.com/'" + "\n\n"
+                            + "Candidate: André de Sousa Valentim" + "\n"
+                            + "Made in Visual Studio" + "\n"
+                            + "Programming Language: C#" + "\n"
+                            + "Year: 2020" + "\n"
+                            + AppDomain.CurrentDomain.SetupInformation.TargetFrameworkName + "\n"
+                            , "Development Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+
+        private void FormMainMenu_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -1,4 +1,4 @@
-﻿namespace FrameworkChallengeScreens
+﻿namespace FrameworkChallengeScreens.View
 {
     partial class FormAlbums
     {
@@ -32,11 +32,9 @@
             this.panelAlbums = new System.Windows.Forms.Panel();
             this.dataGridViewAlbums = new System.Windows.Forms.DataGridView();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.btnRefresh = new System.Windows.Forms.Button();
-            this.btnOpen = new System.Windows.Forms.Button();
-            this.btnDelete = new System.Windows.Forms.Button();
-            this.btnUpdate = new System.Windows.Forms.Button();
-            this.btnCreate = new System.Windows.Forms.Button();
+            this.comboBoxUsersList = new System.Windows.Forms.ComboBox();
+            this.labelUser = new System.Windows.Forms.Label();
+            this.btnUserInfo = new System.Windows.Forms.Button();
             this.panelAlbums.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewAlbums)).BeginInit();
             this.SuspendLayout();
@@ -44,10 +42,11 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 15.75F);
-            this.label1.Location = new System.Drawing.Point(17, 9);
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold);
+            this.label1.ForeColor = System.Drawing.Color.SteelBlue;
+            this.label1.Location = new System.Drawing.Point(17, 15);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(83, 30);
+            this.label1.Size = new System.Drawing.Size(88, 30);
             this.label1.TabIndex = 1;
             this.label1.Text = "Albums";
             // 
@@ -56,96 +55,87 @@
             this.panelAlbums.Controls.Add(this.dataGridViewAlbums);
             this.panelAlbums.Location = new System.Drawing.Point(10, 47);
             this.panelAlbums.Name = "panelAlbums";
-            this.panelAlbums.Size = new System.Drawing.Size(526, 253);
+            this.panelAlbums.Size = new System.Drawing.Size(526, 272);
             this.panelAlbums.TabIndex = 3;
             // 
             // dataGridViewAlbums
             // 
             this.dataGridViewAlbums.AllowUserToAddRows = false;
             this.dataGridViewAlbums.AllowUserToDeleteRows = false;
-            this.dataGridViewAlbums.BackgroundColor = System.Drawing.Color.White;
+            this.dataGridViewAlbums.BackgroundColor = System.Drawing.Color.WhiteSmoke;
+            this.dataGridViewAlbums.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.dataGridViewAlbums.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewAlbums.Location = new System.Drawing.Point(12, 12);
             this.dataGridViewAlbums.Margin = new System.Windows.Forms.Padding(2, 2, 2, 35);
             this.dataGridViewAlbums.Name = "dataGridViewAlbums";
             this.dataGridViewAlbums.ReadOnly = true;
-            this.dataGridViewAlbums.Size = new System.Drawing.Size(501, 234);
+            this.dataGridViewAlbums.Size = new System.Drawing.Size(501, 247);
             this.dataGridViewAlbums.TabIndex = 0;
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.RoyalBlue;
-            this.panel1.Location = new System.Drawing.Point(0, 341);
+            this.panel1.Location = new System.Drawing.Point(0, 359);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(548, 23);
             this.panel1.TabIndex = 4;
             // 
-            // btnRefresh
+            // comboBoxUsersList
             // 
-            this.btnRefresh.Location = new System.Drawing.Point(459, 305);
-            this.btnRefresh.Name = "btnRefresh";
-            this.btnRefresh.Size = new System.Drawing.Size(64, 20);
-            this.btnRefresh.TabIndex = 5;
-            this.btnRefresh.Text = "Refresh";
-            this.btnRefresh.UseVisualStyleBackColor = true;
-            this.btnRefresh.Click += new System.EventHandler(this.btnRefresh_Click);
+            this.comboBoxUsersList.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBoxUsersList.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.comboBoxUsersList.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBoxUsersList.FormattingEnabled = true;
+            this.comboBoxUsersList.Location = new System.Drawing.Point(115, 327);
+            this.comboBoxUsersList.Name = "comboBoxUsersList";
+            this.comboBoxUsersList.Size = new System.Drawing.Size(160, 21);
+            this.comboBoxUsersList.TabIndex = 5;
+            this.comboBoxUsersList.SelectedIndexChanged += new System.EventHandler(this.comboBoxUsersList_SelectedIndexChanged);
             // 
-            // btnOpen
+            // labelUser
             // 
-            this.btnOpen.Location = new System.Drawing.Point(92, 305);
-            this.btnOpen.Name = "btnOpen";
-            this.btnOpen.Size = new System.Drawing.Size(64, 20);
-            this.btnOpen.TabIndex = 5;
-            this.btnOpen.Text = "Open";
-            this.btnOpen.UseVisualStyleBackColor = true;
+            this.labelUser.AutoSize = true;
+            this.labelUser.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelUser.ForeColor = System.Drawing.Color.SteelBlue;
+            this.labelUser.Location = new System.Drawing.Point(18, 327);
+            this.labelUser.Name = "labelUser";
+            this.labelUser.Size = new System.Drawing.Size(90, 17);
+            this.labelUser.TabIndex = 6;
+            this.labelUser.Text = "Change User:";
             // 
-            // btnDelete
+            // btnUserInfo
             // 
-            this.btnDelete.Location = new System.Drawing.Point(161, 305);
-            this.btnDelete.Name = "btnDelete";
-            this.btnDelete.Size = new System.Drawing.Size(64, 20);
-            this.btnDelete.TabIndex = 5;
-            this.btnDelete.Text = "Delete";
-            this.btnDelete.UseVisualStyleBackColor = true;
-            // 
-            // btnUpdate
-            // 
-            this.btnUpdate.Location = new System.Drawing.Point(231, 305);
-            this.btnUpdate.Name = "btnUpdate";
-            this.btnUpdate.Size = new System.Drawing.Size(64, 20);
-            this.btnUpdate.TabIndex = 5;
-            this.btnUpdate.Text = "Update";
-            this.btnUpdate.UseVisualStyleBackColor = true;
-            // 
-            // btnCreate
-            // 
-            this.btnCreate.Location = new System.Drawing.Point(22, 305);
-            this.btnCreate.Name = "btnCreate";
-            this.btnCreate.Size = new System.Drawing.Size(64, 20);
-            this.btnCreate.TabIndex = 5;
-            this.btnCreate.Text = "Create";
-            this.btnCreate.UseVisualStyleBackColor = true;
-            this.btnCreate.Click += new System.EventHandler(this.btnCreate_Click);
+            this.btnUserInfo.BackColor = System.Drawing.Color.SteelBlue;
+            this.btnUserInfo.FlatAppearance.BorderColor = System.Drawing.Color.SteelBlue;
+            this.btnUserInfo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnUserInfo.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnUserInfo.ForeColor = System.Drawing.Color.White;
+            this.btnUserInfo.Location = new System.Drawing.Point(357, 325);
+            this.btnUserInfo.Name = "btnUserInfo";
+            this.btnUserInfo.Size = new System.Drawing.Size(166, 23);
+            this.btnUserInfo.TabIndex = 7;
+            this.btnUserInfo.Text = "See Personal Infomation...";
+            this.btnUserInfo.UseVisualStyleBackColor = false;
+            this.btnUserInfo.Click += new System.EventHandler(this.btnUserInfo_Click);
             // 
             // FormAlbums
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(547, 365);
-            this.Controls.Add(this.btnCreate);
-            this.Controls.Add(this.btnUpdate);
-            this.Controls.Add(this.btnDelete);
-            this.Controls.Add(this.btnOpen);
-            this.Controls.Add(this.btnRefresh);
+            this.ClientSize = new System.Drawing.Size(547, 382);
+            this.Controls.Add(this.btnUserInfo);
+            this.Controls.Add(this.labelUser);
+            this.Controls.Add(this.comboBoxUsersList);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.panelAlbums);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.MinimizeBox = false;
+            this.MaximizeBox = false;
             this.Name = "FormAlbums";
+            this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "FormAlbums";
+            this.Text = "Albums";
             this.Load += new System.EventHandler(this.FormAlbums_Load);
             this.panelAlbums.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewAlbums)).EndInit();
@@ -159,10 +149,8 @@
         private System.Windows.Forms.Panel panelAlbums;
         private System.Windows.Forms.DataGridView dataGridViewAlbums;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Button btnRefresh;
-        private System.Windows.Forms.Button btnOpen;
-        private System.Windows.Forms.Button btnDelete;
-        private System.Windows.Forms.Button btnUpdate;
-        private System.Windows.Forms.Button btnCreate;
+        private System.Windows.Forms.ComboBox comboBoxUsersList;
+        private System.Windows.Forms.Label labelUser;
+        private System.Windows.Forms.Button btnUserInfo;
     }
 }

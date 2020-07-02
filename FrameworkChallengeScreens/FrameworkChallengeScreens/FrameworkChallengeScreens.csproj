@@ -53,14 +53,11 @@
     <Compile Include="Control\Posts\Posts.cs" />
     <Compile Include="Control\SendRequest.cs" />
     <Compile Include="Control\Todos\Todos.cs" />
-    <Compile Include="Control\Users\AddressGeolocalization.cs" />
+    <Compile Include="Control\Users\AddressGeo.cs" />
     <Compile Include="Control\Users\Users.cs" />
     <Compile Include="Control\Users\UsersAddress.cs" />
     <Compile Include="Control\Users\UsersCompany.cs" />
-    <Compile Include="Model\DeleteMethodConnectionRequest.cs" />
     <Compile Include="Model\GetMethodConnectionRequest.cs" />
-    <Compile Include="Model\PostMethodConnectionRequest.cs" />
-    <Compile Include="Model\UpdateMethodConnectionRequest.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="View\FormAlbums.cs">

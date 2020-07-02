@@ -1,8 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace FrameworkChallengeScreens.Control {
+﻿namespace FrameworkChallengeScreens.Control {
+    /// <summary>
+    /// Class for retrieve values from the .json File.
+    /// </summary>
     class Users {
         public int ID { get; set; }
         public string Name { get; set; }
