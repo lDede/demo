@@ -132,7 +132,6 @@ namespace FrameworkChallengeScreens.View
             this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ToDo List";
-            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.FormToDos_FormClosed);
             this.Load += new System.EventHandler(this.FormToDos_Load);
             this.panelAlbums.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewAlbums)).EndInit();
