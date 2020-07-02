@@ -37,8 +37,6 @@
             this.btnDelete = new System.Windows.Forms.Button();
             this.btnUpdate = new System.Windows.Forms.Button();
             this.btnCreate = new System.Windows.Forms.Button();
-            this.albumID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.albumTitle = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panelAlbums.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewAlbums)).BeginInit();
             this.SuspendLayout();
@@ -67,9 +65,6 @@
             this.dataGridViewAlbums.AllowUserToDeleteRows = false;
             this.dataGridViewAlbums.BackgroundColor = System.Drawing.Color.White;
             this.dataGridViewAlbums.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewAlbums.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.albumID,
-            this.albumTitle});
             this.dataGridViewAlbums.Location = new System.Drawing.Point(12, 12);
             this.dataGridViewAlbums.Margin = new System.Windows.Forms.Padding(2, 2, 2, 35);
             this.dataGridViewAlbums.Name = "dataGridViewAlbums";
@@ -132,20 +127,6 @@
             this.btnCreate.UseVisualStyleBackColor = true;
             this.btnCreate.Click += new System.EventHandler(this.btnCreate_Click);
             // 
-            // albumID
-            // 
-            this.albumID.HeaderText = "ID";
-            this.albumID.Name = "albumID";
-            this.albumID.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            // 
-            // albumTitle
-            // 
-            this.albumTitle.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.albumTitle.HeaderText = "Title";
-            this.albumTitle.Name = "albumTitle";
-            this.albumTitle.ReadOnly = true;
-            this.albumTitle.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            // 
             // FormAlbums
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -183,7 +164,5 @@
         private System.Windows.Forms.Button btnDelete;
         private System.Windows.Forms.Button btnUpdate;
         private System.Windows.Forms.Button btnCreate;
-        private System.Windows.Forms.DataGridViewTextBoxColumn albumID;
-        private System.Windows.Forms.DataGridViewTextBoxColumn albumTitle;
     }
 }

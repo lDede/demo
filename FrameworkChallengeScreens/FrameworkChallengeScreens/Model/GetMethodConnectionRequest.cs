@@ -6,28 +6,11 @@ using FrameworkChallengeScreens.Control;
 
 namespace FrameworkChallengeScreens.Model {
     class GetMethodConnectionRequest {
-        public List<Albums> GetAllAlbums() {
+        public List<Albums> AlbumsList() {
             HttpWebRequest WebReq = (HttpWebRequest)WebRequest.Create(string.Format("https://my-json-server.typicode.com/lDede/demo/albums"));
 
             string values = StartGet(WebReq);
             List<Albums> items = JsonConvert.DeserializeObject<List<Albums>>(values);
-
-            return items;
-        }
-
-        public List<Albums> GetAlbumByID(int IDParameter) {
-            HttpWebRequest WebReq = (HttpWebRequest)WebRequest.Create(string.Format("https://jsonplaceholder.typicode.com/albums" + "/" + IDParameter));
-
-            string values = StartGet(WebReq);
-            List<Albums> items = JsonConvert.DeserializeObject<List<Albums>>(values);
-
-            return items;
-        }
-        public List<Photos> GetPhotoByAlbumID(int IDParameter) {
-            HttpWebRequest WebReq = (HttpWebRequest)WebRequest.Create(string.Format("https://jsonplaceholder.typicode.com/albums" + "/" + IDParameter + "/photos"));
-
-            string values = StartGet(WebReq);
-            List<Photos> items = JsonConvert.DeserializeObject<List<Photos>>(values);
 
             return items;
         }

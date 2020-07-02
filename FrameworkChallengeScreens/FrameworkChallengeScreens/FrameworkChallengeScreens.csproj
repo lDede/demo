@@ -50,8 +50,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Control\Albums\Albums.cs" />
-    <Compile Include="Control\Albums\Photos.cs" />
-    <Compile Include="Control\Posts\Comments.cs" />
     <Compile Include="Control\Posts\Posts.cs" />
     <Compile Include="Control\SendRequest.cs" />
     <Compile Include="Control\Todos\Todos.cs" />
@@ -59,10 +57,8 @@
     <Compile Include="Control\Users\Users.cs" />
     <Compile Include="Control\Users\UsersAddress.cs" />
     <Compile Include="Control\Users\UsersCompany.cs" />
-    <Compile Include="Model\ConnectionRequest.cs" />
     <Compile Include="Model\DeleteMethodConnectionRequest.cs" />
     <Compile Include="Model\GetMethodConnectionRequest.cs" />
-    <Compile Include="Model\JavaScriptSerializer.cs" />
     <Compile Include="Model\PostMethodConnectionRequest.cs" />
     <Compile Include="Model\UpdateMethodConnectionRequest.cs" />
     <Compile Include="Program.cs" />

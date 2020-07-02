@@ -30,9 +30,8 @@ namespace FrameworkChallengeScreens
             try
             {
                 List<Albums> userAlbums = sendRequest.RequestAlbums();
-                dataGridViewAlbums.Rows.Clear();
-                foreach (Albums value in userAlbums)
-                    dataGridViewAlbums.Rows.Add(value.ID, value.Title);
+                dataGridViewAlbums.DataSource = null;
+                dataGridViewAlbums.DataSource = userAlbums;
             }
             catch (Exception ex)
             {
@@ -47,6 +46,7 @@ namespace FrameworkChallengeScreens
                 Albums album = new Albums();
                 album.Title = "Flush";
                 album.UserId = 1;
+                album.AlbumId = 5;
                 sendRequest.CreateAlbum(album);
             }
             catch (Exception ex)

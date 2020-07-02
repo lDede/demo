@@ -11,13 +11,14 @@ namespace FrameworkChallengeScreens.Model {
     class PostConnectionRequest {
         public async System.Threading.Tasks.Task CreateAlbumAsync(Albums album)
         {
-            string myJson = "{'Username':" + " ' " + album.UserId + " ' " + ", " + " ' " + album.ID + " ' " + "}";
-            using (var client = new HttpClient())
-            {
-                var response = await client.PostAsync(
-                    "https://jsonplaceholder.typicode.com/albums",
-                     new StringContent(myJson, Encoding.UTF8, "application/json"));
-            }
+            Dictionary<string, Object> jsonValues = new Dictionary<string, Object>();
+            jsonValues.Add("userid", album.UserId);
+            jsonValues.Add("id", album.AlbumId);
+            jsonValues.Add("title", album.Title);
+
+            HttpClient client = new HttpClient();
+            StringContent sc = new StringContent(JsonConvert.SerializeObject(jsonValues), UnicodeEncoding.UTF8, "application/json");
+            HttpResponseMessage response = await client.PostAsync("https://my-json-server.typicode.com/lDede/demo/albums", sc);            
         }
         public void noname(Albums album)
         {

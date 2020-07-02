@@ -5,7 +5,7 @@ using System.Text;
 namespace FrameworkChallengeScreens.Control {
     class Todos {
         public int UserId { get; set; }
-        public int ID { get; set; }
+        public int TodoId { get; set; }
         public string Title { get; set; }
         public string Completed { get; set; }
     }

@@ -31,7 +31,7 @@
             // 
             // btnTodo
             // 
-            this.btnTodo.Location = new System.Drawing.Point(116, 79);
+            this.btnTodo.Location = new System.Drawing.Point(210, 80);
             this.btnTodo.Name = "btnTodo";
             this.btnTodo.Size = new System.Drawing.Size(64, 20);
             this.btnTodo.TabIndex = 0;
@@ -41,7 +41,7 @@
             // 
             // btnAlbums
             // 
-            this.btnAlbums.Location = new System.Drawing.Point(116, 27);
+            this.btnAlbums.Location = new System.Drawing.Point(210, 28);
             this.btnAlbums.Name = "btnAlbums";
             this.btnAlbums.Size = new System.Drawing.Size(64, 20);
             this.btnAlbums.TabIndex = 0;
@@ -51,7 +51,7 @@
             // 
             // btnPosts
             // 
-            this.btnPosts.Location = new System.Drawing.Point(116, 53);
+            this.btnPosts.Location = new System.Drawing.Point(210, 54);
             this.btnPosts.Name = "btnPosts";
             this.btnPosts.Size = new System.Drawing.Size(64, 20);
             this.btnPosts.TabIndex = 0;

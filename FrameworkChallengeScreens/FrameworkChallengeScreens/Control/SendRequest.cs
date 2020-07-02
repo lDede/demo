@@ -7,13 +7,13 @@ namespace FrameworkChallengeScreens.Control {
     class SendRequest {
         public List<Albums> RequestAlbums() {
             GetMethodConnectionRequest getRequest = new GetMethodConnectionRequest();
-            List<Albums> albumsList = getRequest.GetAllAlbums();
-            return albumsList;
+            List<Albums> list = getRequest.AlbumsList();
+            return list;
         }
         public void CreateAlbum(Albums album)
         {
             PostConnectionRequest postRequest = new PostConnectionRequest();
-            postRequest.noname(album);
+            _ = postRequest.CreateAlbumAsync(album);
         }
     }
 }
